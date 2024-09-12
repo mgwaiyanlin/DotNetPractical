@@ -7,12 +7,12 @@ namespace DotNetPractical.RestAPI.Models
     public class StudentModel
     {
         [Key]
-        public int Id { get; set; }
-        public string? StudentName { get; set; }
-        public int StudentAge { get; set; }
-        public int StudentYear { get; set; }
-        public string? JoinDate { get; set; }
-        public string? Major { get; set; }
+        public int id { get; set; }
+        public string? student_name { get; set; }
+        public int student_age { get; set; }
+        public int student_year { get; set; }
+        public string? join_date { get; set; }
+        public string? major { get; set; }
 
     }
 }
