@@ -19,7 +19,7 @@ namespace DotNetPractical.RestAPI.Controllers
             return Ok(students);
         }
 
-        [HttpGet("get/{id}")]
+        [HttpGet("get_a_student/{id}")]
         public IActionResult GetStudent(int id)
         {
             var student = FindById(id);
