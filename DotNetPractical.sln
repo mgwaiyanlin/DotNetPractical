@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.ConsoleAppWithHttpClient", "DotNetPractical.ConsoleAppWithHttpClient\DotNetPractical.ConsoleAppWithHttpClient.csproj", "{5F84EE4E-041D-4BAF-BF75-382848BE4285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractical.RestAPI", "DotNetPractical.RestAPI\DotNetPractical.RestAPI.csproj", "{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.RestAPI", "DotNetPractical.RestAPI\DotNetPractical.RestAPI.csproj", "{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractical.ConsoleAppwithRestClient", "DotNetPractical.ConsoleAppwithRestClient\DotNetPractical.ConsoleAppwithRestClient.csproj", "{909AE97E-8D83-43EA-87F4-C8819ECB06B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909AE97E-8D83-43EA-87F4-C8819ECB06B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909AE97E-8D83-43EA-87F4-C8819ECB06B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909AE97E-8D83-43EA-87F4-C8819ECB06B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909AE97E-8D83-43EA-87F4-C8819ECB06B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
