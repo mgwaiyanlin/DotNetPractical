@@ -1,0 +1,6 @@
+@DotNetPractical.RestAPIwithNLayers_HostAddress = http://localhost:5142
+
+GET {{DotNetPractical.RestAPIwithNLayers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
