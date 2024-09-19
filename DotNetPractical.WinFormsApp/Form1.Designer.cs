@@ -60,6 +60,7 @@
             textName.Name = "textName";
             textName.Size = new Size(201, 34);
             textName.TabIndex = 3;
+            textName.TextChanged += textName_TextChanged;
             // 
             // student_age
             // 

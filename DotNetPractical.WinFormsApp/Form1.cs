@@ -1,4 +1,5 @@
 using DotNetPractical.WinFormsApp.Models;
+using DotNetPractical.WinFormsApp.Queries;
 using DotNetPractical.WinFormsApp.Services;
 
 namespace DotNetPractical.WinFormsApp
@@ -18,15 +19,22 @@ namespace DotNetPractical.WinFormsApp
             {
                 StudentModel student = new StudentModel();
                 student.student_name = textName.Text;
-                student.student_age = textAge.Text;
-                student.student_year = textYear.Text;
+                student.student_age = Convert.ToInt32(textAge.Text);
+                student.student_year = Convert.ToInt32(textYear.Text);
                 student.join_date = textJoinDate.Text;
                 student.major = textMajor.Text;
 
-                _dapperService.Execute(StudentModel.StudentCreate ,student);
+                int result = _dapperService.Execute(StudentQueries.CreateStudent, student);
 
-                return;
+                clearInputsEvent();
 
+                if (result > 0)
+                {
+                    MessageBox.Show("Data Added Successfully!");
+                } else
+                {
+                    MessageBox.Show("Error: Data not saved! Something went wrong!");
+                }
             }
             catch (Exception ex)
             {
@@ -36,7 +44,7 @@ namespace DotNetPractical.WinFormsApp
 
         private void cancelBtnEvent(object sender, EventArgs e)
         {
-            clearInputsEvent();   
+            clearInputsEvent();
         }
 
         private void clearInputsEvent()
@@ -48,6 +56,11 @@ namespace DotNetPractical.WinFormsApp
             textMajor.Clear();
 
             textName.Focus();
+        }
+
+        private void textName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
