@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.ConsoleAppW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.RestAPI", "DotNetPractical.RestAPI\DotNetPractical.RestAPI.csproj", "{F5F72D8E-8564-44E2-9A93-7CB48BD4CC58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractical.ConsoleAppwithRestClient", "DotNetPractical.ConsoleAppwithRestClient\DotNetPractical.ConsoleAppwithRestClient.csproj", "{909AE97E-8D83-43EA-87F4-C8819ECB06B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.ConsoleAppwithRestClient", "DotNetPractical.ConsoleAppwithRestClient\DotNetPractical.ConsoleAppwithRestClient.csproj", "{909AE97E-8D83-43EA-87F4-C8819ECB06B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractical.RestAPIwithNLayers", "DotNetPractical.RestAPIwithNLayers\DotNetPractical.RestAPIwithNLayers.csproj", "{564BA5D4-40C1-437C-842D-340CCC6C663F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractical.RestAPIwithNLayers", "DotNetPractical.RestAPIwithNLayers\DotNetPractical.RestAPIwithNLayers.csproj", "{564BA5D4-40C1-437C-842D-340CCC6C663F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractical.ConsoleAppWithRefit", "DotNetPractical.ConsoleAppWithRefit\DotNetPractical.ConsoleAppWithRefit.csproj", "{4CF3494D-FB4A-42A8-BA9D-06C899B71674}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{564BA5D4-40C1-437C-842D-340CCC6C663F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564BA5D4-40C1-437C-842D-340CCC6C663F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564BA5D4-40C1-437C-842D-340CCC6C663F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF3494D-FB4A-42A8-BA9D-06C899B71674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF3494D-FB4A-42A8-BA9D-06C899B71674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF3494D-FB4A-42A8-BA9D-06C899B71674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF3494D-FB4A-42A8-BA9D-06C899B71674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
