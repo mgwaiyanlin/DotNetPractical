@@ -8,6 +8,8 @@ namespace DotNetPractical.WinFormsApp.Queries
 {
     public class StudentQueries
     {
+        public static string ViewAllStudents { get; } = @"SELECT * FROM students";
+
         public static string CreateStudent { get; } = @"INSERT INTO [dbo].[Students]
                ([student_name]
                ,[student_age]

@@ -4,10 +4,10 @@ using DotNetPractical.WinFormsApp.Services;
 
 namespace DotNetPractical.WinFormsApp
 {
-    public partial class Form1 : Form
+    public partial class CreateStudentForm : Form
     {
         private readonly DapperService _dapperService;
-        public Form1()
+        public CreateStudentForm()
         {
             InitializeComponent();
             _dapperService = new DapperService(ConnectionsString.sqlConnectionStringBuilder.ConnectionString);

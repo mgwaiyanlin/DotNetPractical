@@ -1,6 +1,6 @@
 ﻿namespace DotNetPractical.WinFormsApp
 {
-    partial class Form1
+    partial class CreateStudentForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -46,112 +46,112 @@
             // student_name
             // 
             student_name.AutoSize = true;
-            student_name.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            student_name.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            student_name.ForeColor = SystemColors.ControlText;
             student_name.Location = new Point(43, 138);
             student_name.Name = "student_name";
-            student_name.Size = new Size(138, 26);
+            student_name.Size = new Size(119, 23);
             student_name.TabIndex = 0;
             student_name.Text = "Student Name";
             // 
             // textName
             // 
-            textName.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textName.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textName.Location = new Point(180, 134);
             textName.Name = "textName";
-            textName.Size = new Size(201, 34);
+            textName.Size = new Size(201, 31);
             textName.TabIndex = 3;
             textName.TextChanged += textName_TextChanged;
             // 
             // student_age
             // 
             student_age.AutoSize = true;
-            student_age.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            student_age.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             student_age.Location = new Point(491, 142);
             student_age.Name = "student_age";
-            student_age.Size = new Size(45, 26);
+            student_age.Size = new Size(39, 23);
             student_age.TabIndex = 4;
             student_age.Text = "Age";
             // 
             // textAge
             // 
-            textAge.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textAge.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textAge.Location = new Point(539, 134);
             textAge.Name = "textAge";
-            textAge.Size = new Size(201, 34);
+            textAge.Size = new Size(201, 31);
             textAge.TabIndex = 5;
             // 
             // textYear
             // 
-            textYear.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textYear.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textYear.Location = new Point(180, 204);
             textYear.Name = "textYear";
-            textYear.Size = new Size(201, 34);
+            textYear.Size = new Size(201, 31);
             textYear.TabIndex = 6;
             // 
             // student_year
             // 
             student_year.AutoSize = true;
-            student_year.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            student_year.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             student_year.Location = new Point(43, 204);
             student_year.Name = "student_year";
-            student_year.Size = new Size(129, 26);
+            student_year.Size = new Size(107, 23);
             student_year.TabIndex = 7;
             student_year.Text = "Student Year";
             // 
             // textJoinDate
             // 
-            textJoinDate.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textJoinDate.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textJoinDate.Location = new Point(539, 214);
             textJoinDate.Name = "textJoinDate";
-            textJoinDate.Size = new Size(201, 34);
+            textJoinDate.Size = new Size(201, 31);
             textJoinDate.TabIndex = 8;
             // 
             // join_date
             // 
             join_date.AutoSize = true;
-            join_date.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            join_date.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             join_date.Location = new Point(436, 214);
             join_date.Name = "join_date";
-            join_date.Size = new Size(97, 26);
+            join_date.Size = new Size(80, 23);
             join_date.TabIndex = 9;
             join_date.Text = "Join Date";
             // 
             // major
             // 
             major.AutoSize = true;
-            major.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            major.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             major.Location = new Point(106, 279);
             major.Name = "major";
-            major.Size = new Size(66, 26);
+            major.Size = new Size(57, 23);
             major.TabIndex = 10;
             major.Text = "Major";
             // 
             // textMajor
             // 
-            textMajor.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textMajor.Font = new Font("Calibri", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textMajor.Location = new Point(180, 279);
             textMajor.Name = "textMajor";
-            textMajor.Size = new Size(201, 34);
+            textMajor.Size = new Size(201, 31);
             textMajor.TabIndex = 11;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Yellow;
-            label1.Font = new Font("Sitka Subheading", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(234, 30);
+            label1.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkGoldenrod;
+            label1.Location = new Point(335, 50);
             label1.Name = "label1";
-            label1.Size = new Size(339, 35);
+            label1.Size = new Size(166, 26);
             label1.TabIndex = 12;
-            label1.Text = "Student Management System";
+            label1.Text = "Add New Student";
             // 
             // saveBtn
             // 
-            saveBtn.BackColor = Color.LightGreen;
+            saveBtn.BackColor = Color.FromArgb(0, 74, 156);
             saveBtn.FlatStyle = FlatStyle.Flat;
-            saveBtn.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            saveBtn.ForeColor = SystemColors.ActiveCaptionText;
+            saveBtn.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saveBtn.ForeColor = Color.White;
             saveBtn.Location = new Point(654, 274);
             saveBtn.Name = "saveBtn";
             saveBtn.Size = new Size(86, 36);
@@ -164,8 +164,8 @@
             // 
             cancelBtn.BackColor = Color.Gray;
             cancelBtn.FlatStyle = FlatStyle.Flat;
-            cancelBtn.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cancelBtn.ForeColor = SystemColors.ActiveCaptionText;
+            cancelBtn.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancelBtn.ForeColor = Color.White;
             cancelBtn.Location = new Point(555, 274);
             cancelBtn.Name = "cancelBtn";
             cancelBtn.Size = new Size(86, 36);
@@ -174,11 +174,11 @@
             cancelBtn.UseVisualStyleBackColor = false;
             cancelBtn.Click += cancelBtnEvent;
             // 
-            // Form1
+            // CreateStudentForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.FromArgb(230, 241, 245);
             ClientSize = new Size(800, 450);
             Controls.Add(cancelBtn);
             Controls.Add(saveBtn);
@@ -193,8 +193,9 @@
             Controls.Add(student_age);
             Controls.Add(textName);
             Controls.Add(student_name);
-            ForeColor = SystemColors.ControlLight;
-            Name = "Form1";
+            ForeColor = Color.FromArgb(0, 46, 93);
+            Name = "CreateStudentForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Management System";
             ResumeLayout(false);
             PerformLayout();
