@@ -10,5 +10,5 @@ You need to install Refit from Nuget.
 - Select on the grid and click the arrow at the right coner
 - Edit columns...
 - Add column names and give your database column names in the DataPropertyName
-- To load data (see my code in the StudentListView.cs File
+- To load data (see my code in the StudentListView.cs File)
   
