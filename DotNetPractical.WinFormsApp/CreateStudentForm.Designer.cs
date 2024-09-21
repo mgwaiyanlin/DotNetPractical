@@ -41,6 +41,7 @@
             label1 = new Label();
             saveBtn = new Button();
             cancelBtn = new Button();
+            updateBtn = new Button();
             SuspendLayout();
             // 
             // student_name
@@ -61,7 +62,6 @@
             textName.Name = "textName";
             textName.Size = new Size(201, 31);
             textName.TabIndex = 3;
-            textName.TextChanged += textName_TextChanged;
             // 
             // student_age
             // 
@@ -174,12 +174,28 @@
             cancelBtn.UseVisualStyleBackColor = false;
             cancelBtn.Click += cancelBtnEvent;
             // 
+            // updateBtn
+            // 
+            updateBtn.BackColor = Color.LightSeaGreen;
+            updateBtn.FlatStyle = FlatStyle.Flat;
+            updateBtn.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            updateBtn.ForeColor = Color.White;
+            updateBtn.Location = new Point(654, 275);
+            updateBtn.Name = "updateBtn";
+            updateBtn.Size = new Size(86, 36);
+            updateBtn.TabIndex = 15;
+            updateBtn.Text = "Update";
+            updateBtn.UseVisualStyleBackColor = false;
+            updateBtn.Visible = false;
+            updateBtn.Click += updateBtn_Click;
+            // 
             // CreateStudentForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(230, 241, 245);
             ClientSize = new Size(800, 450);
+            Controls.Add(updateBtn);
             Controls.Add(cancelBtn);
             Controls.Add(saveBtn);
             Controls.Add(label1);
@@ -216,5 +232,6 @@
         private Label label1;
         private Button saveBtn;
         private Button cancelBtn;
+        private Button updateBtn;
     }
 }

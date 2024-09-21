@@ -35,6 +35,8 @@
             student_year = new DataGridViewTextBoxColumn();
             join_date = new DataGridViewTextBoxColumn();
             major = new DataGridViewTextBoxColumn();
+            editColumn = new DataGridViewButtonColumn();
+            deleteColumn = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)studentGridView).BeginInit();
             SuspendLayout();
             // 
@@ -45,12 +47,13 @@
             studentGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             studentGridView.BackgroundColor = Color.FromArgb(230, 241, 245);
             studentGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            studentGridView.Columns.AddRange(new DataGridViewColumn[] { id, student_name, student_age, student_year, join_date, major });
+            studentGridView.Columns.AddRange(new DataGridViewColumn[] { id, student_name, student_age, student_year, join_date, major, editColumn, deleteColumn });
             studentGridView.Location = new Point(0, 55);
             studentGridView.Name = "studentGridView";
             studentGridView.ReadOnly = true;
             studentGridView.Size = new Size(800, 396);
             studentGridView.TabIndex = 0;
+            studentGridView.CellContentClick += studentGridView_CellContentClick;
             // 
             // id
             // 
@@ -94,6 +97,22 @@
             major.Name = "major";
             major.ReadOnly = true;
             // 
+            // editColumn
+            // 
+            editColumn.HeaderText = "";
+            editColumn.Name = "editColumn";
+            editColumn.ReadOnly = true;
+            editColumn.Text = "Edit";
+            editColumn.UseColumnTextForButtonValue = true;
+            // 
+            // deleteColumn
+            // 
+            deleteColumn.HeaderText = "";
+            deleteColumn.Name = "deleteColumn";
+            deleteColumn.ReadOnly = true;
+            deleteColumn.Text = "Delete";
+            deleteColumn.UseColumnTextForButtonValue = true;
+            // 
             // StudentListView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,5 +138,7 @@
         private DataGridViewTextBoxColumn student_year;
         private DataGridViewTextBoxColumn join_date;
         private DataGridViewTextBoxColumn major;
+        private DataGridViewButtonColumn editColumn;
+        private DataGridViewButtonColumn deleteColumn;
     }
 }
