@@ -46,11 +46,11 @@ namespace DotNetPractical.WinFormsApp
             try
             {
                 StudentModel student = new StudentModel();
-                student.student_name = textName.Text;
-                student.student_age = Convert.ToInt32(textAge.Text);
-                student.student_year = Convert.ToInt32(textYear.Text);
-                student.join_date = textJoinDate.Text;
-                student.major = textMajor.Text;
+                student.student_name = textName.Text.Trim();
+                student.student_age = Convert.ToInt32(textAge.Text.Trim());
+                student.student_year = Convert.ToInt32(textYear.Text.Trim());
+                student.join_date = textJoinDate.Text.Trim();
+                student.major = textMajor.Text.Trim();
 
                 int result = _dapperService.Execute(StudentQueries.CreateStudent, student);
 
@@ -93,11 +93,11 @@ namespace DotNetPractical.WinFormsApp
             {
                 StudentModel student = new StudentModel();
                 student.id = _studentId;
-                student.student_name = textName.Text;
-                student.student_age = Convert.ToInt32(textAge.Text);
-                student.student_year = Convert.ToInt32(textYear.Text);
-                student.join_date = textJoinDate.Text;
-                student.major = textMajor.Text;
+                student.student_name = textName.Text.Trim();
+                student.student_age = Convert.ToInt32(textAge.Text.Trim());
+                student.student_year = Convert.ToInt32(textYear.Text.Trim());
+                student.join_date = textJoinDate.Text.Trim();
+                student.major = textMajor.Text.Trim();
 
                 int result = _dapperService.Execute(StudentQueries.UpdateStudent, student);
 
